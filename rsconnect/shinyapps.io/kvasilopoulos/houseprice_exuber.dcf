@@ -5,9 +5,9 @@ account: kvasilopoulos
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 491000
-bundleId: 1623100
+bundleId: 1628454
 url: https://kvasilopoulos.shinyapps.io/houseprice_exuber/
-when: 1538672945.56192
+when: 1538949736.87567
 asMultiple: FALSE
 asStatic: FALSE
-ignoredFiles: about/about.html|about/about.Rmd|data/hp1704.xlsx|not_used/01-dallas-fed.R|not_used/02-tickers-yahoo.R|not_used/03-Analysis.R|not_used/old_app.R
+ignoredFiles: 01-oecd.R|02-analysis.R|oecd.RData|csv/price.csv|csv/rent.csv

@@ -1,9 +1,25 @@
 library(shiny)
 # library(semantic.dashboard)
 library(shinydashboard)
-
 library(DT)
+
+
+# Load everything ---------------------------------------------------------
+
+store <- c((items <- c("price", "income", "rent")),
+           c("countries_accepted", "cv", "cv_seq"),
+           paste0("summary_", items),
+           paste0("datestamp_", items),
+           paste0("estimation_", items),
+           paste0("plot_", items),
+           paste0("autoplot_", items))
+
+path_store <- paste0("data/", store, ".rds")
+
+for (i in seq_along(store)) assign(store[i], readRDS(file = path_store[i]))
+
 # Sidebar -----------------------------------------------------------------
+
 
 
 sidebar <- dashboardSidebar(

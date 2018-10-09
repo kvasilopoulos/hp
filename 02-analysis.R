@@ -1,3 +1,4 @@
+source("01-oecd.R")
 library(exuber)
 
 # create possibly functions
@@ -188,3 +189,25 @@ cv <- rbind(adf, sadf, gsadf) %>%
   as.data.frame() %>% 
   set_names( ncv)
 rownames(cv) <- c("ADF", "SADF", "GSADF")
+
+
+
+# Save everything in Rds --------------------------------------------------
+
+
+
+store <- c((items <- c("price", "income", "rent")),
+  c("countries_accepted", "cv", "cv_seq"),
+  paste0("summary_", items),
+  paste0("datestamp_", items),
+  paste0("estimation_", items),
+  paste0("plot_", items),
+  paste0("autoplot_", items))
+
+path_store <- paste0("data/", store, ".rds")
+
+for (i in seq_along(store)) saveRDS(get(store[i]), file = path_store[i])
+
+
+
+

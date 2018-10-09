@@ -1,0 +1,34 @@
+---
+title: "exuber"
+author: "Kostas Vasilopoulos, Themis Pavlidis, Simon Spavound and Enrique Martinez-Garcia"
+output:
+  html_document
+---
+
+# This 
+
+```{r package}
+library(exuber)
+```
+
+
+## OECD 
+# This summary was drawn from OECD website
+
+Residential Property Prices Indices (RPPIs) – also named House price indices (HPIs), are index numbers that measure the prices of residential properties over time. RPPIs are key statistics not only for citizens and households across the world, but also for economic and monetary policy makers. They can help, for example, to monitor potential macroeconomic imbalances and the risk exposure of the household and financial sectors. 
+
+This dataset covers the OECD member countries and some non-member countries. In addition to the nominal RPPIs it contains information on real house prices, rental prices and the ratios of nominal prices to rents and to disposable household income per capita. This dataset contains quarterly and annual statistics for each country. Annual figures refer to the average of the year. 
+
+House prices differ widely across OECD countries, both with respect to recent changes and to valuation levels. The OECD has identified one main nominal index for each country that covers the prices for the sale of newly-built and existing dwellings. The datasets “Analytical house price indicators” and “Residential Property Price Indices (RPPIs) – Headline Indicators” refer to the same price indices for all countries apart from Brazil, Canada, China, the United States and the Euro area. These differences are further documented in country-specific metadata. For the United States, the series used in “Analytical house price indicators” is included in the dataset called “Residential Property Price Indices (RPPIs) – Complete database”, but is not the headline indicator. For all other countries, non-seasonally adjusted price indices in both datasets are identical in the period in which they overlap. 
+
+This research dataset provides extended time series coverage for many countries. The objective is to provide information on the long term trend of house prices and develop indicators which can be used to help track and analyse macroeconomic developments and risks. 
+The extended data supplement the OECD RPPI data with historical data from a variety of sources, including other international organisations, central banks and national statistical offices. The methodological basis on the historical data and the types of geographical areas and dwellings they cover can differ from those used in the OECD RPPI data. 
+
+The database contains a number of additional series. Real house prices are given by the ratio of seasonally adjusted nominal house prices to the seasonally adjusted consumers’ expenditure deflator in each country, from the OECD national accounts database. This provides information on how nominal house prices have changed over time relative to prices in the general economy. 
+
+The rental prices come from the OECD Main Economic Indicators database and refer to Consumer Price Indices (CPIs) for Actual rentals for housing (COICOP 04.1). If this indicator is missing for a country, another indicator is chosen. The chosen indicator are usually those corresponding to the CPI aggregate for Housing including Actual rentals for housing (COICOP 04.1), imputed rentals for housing (COICOP 04.2) and Maintenance and repair of the dwelling (COICOP 04.3). 
+The disposable income indicators come from the OECD national accounts database. Net household disposable income is used. The population data come from the OECD national accounts database. 
+The price-to-rent ratio is given by the ratio of nominal house prices to rental prices. This is a measure of the profitability of owning a house. The price-to-income ratio is given by the ratio of nominal house prices to nominal household disposable income per capita. This is a measure of the affordability of purchasing a house. An indication that house prices may be overvalued is provided if either of these ratios is above their long-term averages. 
+
+The standardised price-rent and price-income ratios show the current price-rent and price-income ratios relative to their respective long-term averages. The long-term average, which is used as a reference value, is calculated over the whole period available when the indicator begins after 1980 or 1980 if the indicator is available over a longer time period. The standardised ratio is indexed to a reference value equal to 100 over the full sample period. Values over 100 indicate that the present price-rent ratio, or price-income ratio, is above its long-run norms. This provides an indication of possible housing market pressures.
+
